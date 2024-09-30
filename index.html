@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Buff Central</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Home Page Section -->
+    <header>
+        <h1>Welcome to Movie Buff Central</h1>
+        <p>Your hub for all things <span id="franchise-name">Marvel, Harry Potter, and Star Wars</span>!</p>
+        <div class="posters">
+            <img src="marvel_poster.jpg" alt="Marvel Poster">
+            <img src="harrypotter_poster.jpg" alt="Harry Potter Poster">
+            <img src="starwars_poster.jpg" alt="Star Wars Poster">
+        </div>
+    </header>
+
+    <!-- Character Bios Section -->
+    <section id="characters">
+        <h2>Character Bios</h2>
+        <div class="character-bio">
+            <img src="ironman.jpg" alt="Iron Man">
+            <h3>Iron Man</h3>
+            <p>Tony Stark, a genius billionaire playboy philanthropist, becomes the armored superhero Iron Man.</p>
+        </div>
+
+        <div class="character-bio">
+            <img src="harrypotter.jpg" alt="Harry Potter">
+            <h3>Harry Potter</h3>
+            <p>The boy who lived, Harry Potter is a young wizard famous for defeating the dark lord Voldemort.</p>
+        </div>
+
+        <div class="character-bio">
+            <img src="luke.jpg" alt="Luke Skywalker">
+            <h3>Luke Skywalker</h3>
+            <p>A Jedi Knight who becomes a hero in the battle against the Empire and the dark side.</p>
+        </div>
+    </section>
+
+    <!-- Movie Trailers Section -->
+    <section id="trailers">
+        <h2>Movie Trailers</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/tgbNymZ7vqY" frameborder="0" allowfullscreen></iframe>
+    </section>
+
+    <!-- Quote of the Day Section -->
+    <section id="quote-of-the-day">
+        <h2>Quote of the Day</h2>
+        <p id="quote-display">"I am Iron Man."</p>
+        <button onclick="displayRandomQuote()">Get New Quote</button>
+    </section>
+
+    <!-- Trivia Quiz Section -->
+    <section id="trivia-quiz">
+        <h2>Movie Trivia Quiz</h2>
+        <p id="question">Who played Iron Man in the Marvel Cinematic Universe?</p>
+        <ul>
+            <li onclick="checkAnswer(this, 'wrong')">Chris Evans</li>
+            <li onclick="checkAnswer(this, 'correct')">Robert Downey Jr.</li>
+            <li onclick="checkAnswer(this, 'wrong')">Chris Hemsworth</li>
+        </ul>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
